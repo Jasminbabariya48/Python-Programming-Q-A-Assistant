@@ -1,0 +1,23 @@
+# Core API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+
+# RAG — fully local retrieval (no model downloads needed)
+rank-bm25==0.2.2
+scikit-learn==1.6.0
+
+# LLM — Groq (free, OpenAI-compatible)
+openai==1.59.6
+
+# Data
+pandas==2.2.3
+numpy==1.26.4
+
+# Utilities
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0

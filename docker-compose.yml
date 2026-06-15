@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data       # mount dataset CSVs
+      - ./index:/app/index     # persist FAISS index between restarts
+    restart: unless-stopped
